@@ -15,7 +15,7 @@ public class Bingo {
         String s;
 
         System.out.println("Если ты хочешь закончить игру, нажми \"R\"");
-        System.out.print("Угадай число" + minNumber + " до " + maxNumber + ". Введи свое число: ");
+        System.out.print("Угадай число " + minNumber + " до " + maxNumber + ". Введи свое число: ");
 
         int counter = 0;
         do {
@@ -33,9 +33,9 @@ public class Bingo {
             }
 
             if (n > guessedNumber) {
-                System.out.println("Твое число " + n + " > затем секретное число.");
+                System.out.println("Твое число " + n + " > победного числа");
             } else {
-                System.out.println("Твое число " + n + " < затем секретное число.");
+                System.out.println("Твое число " + n + " < победного числа");
             }
             System.out.print("Попытка #" + (counter + 1) + " [" + minNumber + " - " + maxNumber + "]: ");
 
