@@ -14,34 +14,34 @@ public class Bingo {
         Scanner scan = new Scanner(System.in);
         String s;
 
-        System.out.println("If you want to exit game, type \"x\" anytime.");
-        System.out.print("Try to guess number from " + minNumber + " to " + maxNumber + ". Type your number: ");
+        System.out.println("Если ты хочешь закончить игру, нажми \"R\"");
+        System.out.print("Угадай число" + minNumber + " до " + maxNumber + ". Введи свое число: ");
 
         int counter = 0;
         do {
             counter++;
             s = scan.next();
-            if (s.equals("x")) {
+            if (s.equals("R")) {
                 break;
             }
             int n = Integer.parseInt(s);
 
             if (n == guessedNumber) {
-                System.out.println("Wow! You are right! I guessed number " + n);
-                System.out.println("You did it in " + counter + " attempts.");
+                System.out.println("Ты угадал номер" + n);
+                System.out.println("Ты сделал это " + counter + " попытках.");
                 break;
             }
 
             if (n > guessedNumber) {
-                System.out.println("Your number " + n + " > then secret number.");
+                System.out.println("Твое число " + n + " > затем секретное число.");
             } else {
-                System.out.println("Your number " + n + " < then secret number.");
+                System.out.println("Твое число " + n + " < затем секретное число.");
             }
-            System.out.print("Try #" + (counter + 1) + " [" + minNumber + " - " + maxNumber + "]: ");
+            System.out.print("Попытка #" + (counter + 1) + " [" + minNumber + " - " + maxNumber + "]: ");
 
         } while (true);
 
-        System.out.print("Game over!");
+        System.out.print("Игра окончена!");
     }
 }
 
