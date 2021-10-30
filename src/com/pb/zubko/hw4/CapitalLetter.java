@@ -9,7 +9,7 @@ public class CapitalLetter {
     }
 
     static String getUserString(){
-        System.out.println("Enter your string: ");
+        System.out.println("Введите строку: ");
         Scanner scan = new Scanner(System.in);
         return scan.nextLine();
     }
