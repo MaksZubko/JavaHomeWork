@@ -6,16 +6,16 @@ import java.util.Scanner;
 public class Anagram {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter first phrase: ");
+        System.out.println("Введите первую фразу: ");
         String str1 = scan.nextLine();
-        System.out.println("Enter second phrase: ");
+        System.out.println("Введите вторую фразу: ");
         String str2 = scan.nextLine();
 
         if(normalizeAnagram(str1).equals(normalizeAnagram(str2))){
-            System.out.println("These phrases are anagrams.");
+            System.out.println("Эти фразы являются анаграммами.");
         }
         else{
-            System.out.println("These phrases are NOT anagrams.");
+            System.out.println("Эти фразы НЕ являются анаграммами.");
         }
 
     }
